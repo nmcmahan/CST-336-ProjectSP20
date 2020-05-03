@@ -1,0 +1,15 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h3> Game Search </h3>
+		<a class='btn btn-primary' href='/'>Home</a>
+</div>
+
+<div id="display"><figure><figcaption><%=gtitle%></figcaption><img src="<%=imgsrc%>" class="coverart"></figure>Developer: <%=dev%>, Release Date: <%=release%> Platform: <%=platform%><br>
+<p class="desc"><%=gdesc%></p>
+</div>
+
+<div id="submission">Submit this game? <a class='btn btn-primmary' href='/submit?gt=<%=gtitle%>&gdesc=<%=gdesc%>&plat=<%=platform%>'>Yes</a> </div>
+
+<%- include ('templates/footer'); -%>

@@ -1,0 +1,37 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h3> Game Search </h3>
+		<a class='btn btn-primary' href='/'>Home</a>
+	</div>
+
+    <div class="flex-container" id="result"></div>
+
+	<form action='/result' method='GET'>
+		<div class='form-group row'>
+			<label for='gname' class='col-sm-4 col-form-label'>Enter name</label>
+			<div class='col-sm-4'>
+				<input type='text' class='form-control' id='gname' name='gname' required>
+			</div>
+		</div>
+		<div class='form-group row'>
+				<label for='plat' class='col-sm-4 col-form-label'>Platform</label>
+				<select name='plat' id='plat'>
+                    <option value='pc'>PC</option>
+                    <option value='xbox-one'>XBOX One</option>
+                    <option value='switch'>Switch</option>
+                    <option value='playstation-4'>Playstation 4</option>
+                    </select>
+			</div>
+		<div class='form-group row'>
+			<div class='col-sm-4'></div>
+			<div class='col-sm-4'>
+				<button class='btn btn-primary btn-block'>Search</button>
+			</div>
+			<div class='col-sm-4'></div>
+		</div>
+	</form>
+</div>
+
+<%- include ('templates/footer'); -%>
